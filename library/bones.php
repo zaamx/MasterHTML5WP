@@ -242,9 +242,10 @@ function bones_theme_support() {
 function bones_main_nav() {
 	// display the wp3 menu if available
    wp_nav_menu(array(
-	'container' => false,                           // remove nav container
+	'container' => 'div',                           // remove nav container
 	'container_class'   => 'collapse navbar-collapse', //ZAAMX clase de contenedor 
 	//'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
+	'container_id'      => 'bs-example-navbar-collapse-1',
 	'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
 	'menu_class' => 'nav navbar-nav',               // adding custom nav class
 	'theme_location' => 'main-nav',                 // where it's located in the theme

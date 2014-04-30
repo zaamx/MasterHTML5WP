@@ -15,15 +15,15 @@
 
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" class="container">
 
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="row">
 
-						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+						<div id="main" class="col-md-8" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'entrada' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
 
@@ -36,7 +36,7 @@
 
 								</header>
 
-								<section class="entry-content cf" itemprop="articleBody">
+								<section class="entry-content " itemprop="articleBody">
 									<?php
 										// the content (pretty self explanatory huh)
 										the_content();
@@ -75,7 +75,7 @@
 
 							<?php endwhile; else : ?>
 
-									<article id="post-not-found" class="hentry cf">
+									<article id="post-not-found" class="hentry ">
 											<header class="article-header">
 												<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 										</header>

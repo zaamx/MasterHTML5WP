@@ -41,38 +41,36 @@
 
 	<body <?php body_class(); ?>>
 
-		<div id="container">
+	<div id="container">
+		<header class="header" role="banner">
 
-			<header class="header" role="banner">
+			<div id="inner-header" class="container">
 
-				<div id="inner-header" class="wrap cf">
+				<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
+				<!-- <h1 id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1> -->
 
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+				<?php // if you'd like to use the site description you can un-comment it below ?>
+				<?php // bloginfo('description'); ?>
 
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
+				<nav class="navbar navbar-default" role="navigation">
+				  <div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					  <a class="navbar-brand" href="<?php echo home_url(); ?>">
+								<?php bloginfo('name'); ?>
+							</a>
+					</div>
+						<?php bones_main_nav(); ?>
+					</div>
+				</nav>
 
-					
+			</div>
+		</header>
 
-					<nav class="navbar navbar-default" role="navigation">
-					  <div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </button>
-						  <a class="navbar-brand" href="<?php echo home_url(); ?>">
-									<?php bloginfo('name'); ?>
-								</a>
-						</div>
-							<?php bones_main_nav(); ?>
-						</div>
-					</nav>
-
-				</div>
-
-			</header>
+			

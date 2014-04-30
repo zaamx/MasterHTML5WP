@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" class="container">
 
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="row">
 
-					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+						<div id="main" class="col-md-8" role="main">
 
-						<article id="post-not-found" class="hentry cf">
+						<article id="post-not-found" class="hentry">
 
 							<header class="article-header">
 
