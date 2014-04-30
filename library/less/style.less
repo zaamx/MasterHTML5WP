@@ -1,0 +1,61 @@
+/******************************************************************
+Stylesheet: Main Stylesheet
+******************************************************************/
+
+
+//
+// IMPORTING STYLES
+//
+
+// styles in base.less
+@import "_base.less";
+
+
+@media only screen and (min-width: 481px) {
+
+	// styles in 481up.less
+	@import "_481up.less";
+
+} // end of media query
+
+@media only screen and (min-width: 768px) {
+
+	// styles in 768up.less
+	@import "_768up.less";
+
+} // end of media query
+
+
+@media only screen and (min-width: 992px) {
+	// styles in 768up.less
+	@import "_992up.less";
+} // end of media query
+
+
+@media only screen and (min-width: 1200px) {
+
+	@import "_1200up.less";
+
+} // end of media query
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+	// styles in 2x.less
+	@import "_2x.less";
+
+} // end of media query
+
+
+
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+
+}

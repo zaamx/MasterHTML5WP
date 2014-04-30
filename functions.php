@@ -1,7 +1,10 @@
 <?php
 /*
-Author: Eddie Machado
-URL: htp://themble.com/bones/
+Author: Alonso Avila
+URL:  htp://zaa.mx
+
+Author Bones: Eddie Machado 
+URL Bones : htp://themble.com/bones/
 
 This is where you can drop your custom functions or
 just edit things like thumbnail sizes, header images,
