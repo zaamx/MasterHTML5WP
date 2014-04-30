@@ -642,12 +642,25 @@ body {
 
 	.comment-form-comment {
 		margin: 1.5em 0 0.75em;
+		label {
+			width: 100%;
+
+		}
+		textarea {
+			width: 100%;
+		}
 	}
 
 	.form-allowed-tags {
+		border: 1px solid @gray-lighter;
 		padding: 1.5em;
-		background-color: @gray-light;
+		
 		font-size: 0.9em;
+		code {
+			display: block;
+			white-space: normal;
+		}
+
 	}
 
 	/* comment submit button */

@@ -194,6 +194,7 @@ function bones_comments( $comment, $args, $depth ) {
 } // don't remove this bracket!
 
 
+
 /*
 This is a modification of a function found in the
 twentythirteen theme where we can declare some
@@ -207,6 +208,8 @@ function bones_fonts() {
 }
 
 add_action('wp_print_styles', 'bones_fonts');
+
+show_admin_bar( false );
 
 
 

@@ -408,10 +408,20 @@ body {
 .comment-form-comment {
   margin: 1.5em 0 0.75em;
 }
+.comment-form-comment label {
+  width: 100%;
+}
+.comment-form-comment textarea {
+  width: 100%;
+}
 .form-allowed-tags {
+  border: 1px solid #eeeeee;
   padding: 1.5em;
-  background-color: #999999;
   font-size: 0.9em;
+}
+.form-allowed-tags code {
+  display: block;
+  white-space: normal;
 }
 /* comment submit button */
 #submit {

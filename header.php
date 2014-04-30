@@ -44,7 +44,7 @@
 	<div id="container">
 		<header class="header" role="banner">
 
-			<div id="inner-header" class="container">
+			<div id="inner-header">
 
 				<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 				<!-- <h1 id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1> -->
@@ -52,8 +52,8 @@
 				<?php // if you'd like to use the site description you can un-comment it below ?>
 				<?php // bloginfo('description'); ?>
 
-				<nav class="navbar navbar-default" role="navigation">
-				  <div class="container-fluid">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				  <div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
 					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
