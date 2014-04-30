@@ -29,6 +29,8 @@ removing all the junk we don't
 need.
 *********************/
 
+require_once( 'wp_bootstrap_navwalker.php' ); 
+
 function bones_head_cleanup() {
 	// category feeds
 	// remove_action( 'wp_head', 'feed_links_extra', 3 );
@@ -235,6 +237,44 @@ function bones_theme_support() {
 		)
 	);
 } /* end bones theme support */
+
+// the main menu
+function bones_main_nav() {
+	// display the wp3 menu if available
+   wp_nav_menu(array(
+	'container' => false,                           // remove nav container
+	'container_class'   => 'collapse navbar-collapse', //ZAAMX clase de contenedor 
+	//'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
+	'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+	'menu_class' => 'nav navbar-nav',               // adding custom nav class
+	'theme_location' => 'main-nav',                 // where it's located in the theme
+	//'before' => '',                                 // before the menu
+	// 'after' => '',                                  // after the menu
+	//'link_before' => '',                            // before each link
+	//'link_after' => '',                             // after each link
+	'depth' => 2,                                   // limit the depth of the nav
+	'fallback_cb' => 'wp_bootstrap_navwalker::fallback', // Modo de respaldo 
+	'walker' => new wp_bootstrap_navwalker()
+	));
+} /* end bones main nav */
+
+// the footer menu (should you choose to use one)
+function bones_footer_links() {
+	// display the wp3 menu if available
+   wp_nav_menu(array(
+	'container' => '',                              // remove nav container
+	'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
+	'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
+	'menu_class' => 'nav footer-nav cf',            // adding custom nav class
+	'theme_location' => 'footer-links',             // where it's located in the theme
+	'before' => '',                                 // before the menu
+	'after' => '',                                  // after the menu
+	'link_before' => '',                            // before each link
+	'link_after' => '',                             // after each link
+	'depth' => 0,                                   // limit the depth of the nav
+	'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
+	));
+} /* end bones footer link */
 
 
 /*********************

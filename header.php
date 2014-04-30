@@ -54,26 +54,23 @@
 					<?php // bloginfo('description'); ?>
 
 					
-					<?php require_once( 'wp_bootstrap_navwalker.php' );  ?>
 
-
-					<nav role="navigation">
-					
-						<?php wp_nav_menu(array(
-						'container' => false,                           // remove nav container
-						'container_class'   => 'collapse navbar-collapse', //ZAAMX clase de contenedor 
-						//'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
-						'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-						'menu_class' => 'nav navbar-nav',               // adding custom nav class
-						'theme_location' => 'main-nav',                 // where it's located in the theme
-						//'before' => '',                                 // before the menu
-						// 'after' => '',                                  // after the menu
-						//'link_before' => '',                            // before each link
-						//'link_after' => '',                             // after each link
-						'depth' => 2,                                   // limit the depth of the nav
-						'fallback_cb'       => 'wp_bootstrap_navwalker::fallback', // Modo de respaldo 
-						'walker' => new wp_bootstrap_navwalker()
-						)); ?>
+					<nav class="navbar navbar-default" role="navigation">
+					  <div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <a class="navbar-brand" href="<?php echo home_url(); ?>">
+									<?php bloginfo('name'); ?>
+								</a>
+						</div>
+							<?php bones_main_nav(); ?>
+						</div>
 					</nav>
 
 				</div>
