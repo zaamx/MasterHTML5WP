@@ -193,6 +193,23 @@ function bones_comments( $comment, $args, $depth ) {
 <?php
 } // don't remove this bracket!
 
+// Search Form
+
+// Uso : get_search_form();
+function bones_wpsearch($form) {
+  $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
+  <label class="sr-only" for="s">' . __( 'Search for:', 'bonestheme' ) . '</label>
+  <div class="input-group">
+    <input class="form-control"  type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search the Site...', 'bonestheme' ) . '" />
+    <span class="input-group-btn">
+      <button class="btn btn-success" type="submit" id="searchsubmit" >' . esc_attr__( 'Search' ) .'</button>
+    </span>
+
+
+  </div><!-- /input-group -->
+  </form>';
+  return $form;
+} // don't remove this bracket!
 
 
 /*
