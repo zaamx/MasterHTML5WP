@@ -1,42 +1,42 @@
 /******************************************************************
 Stylesheet: Main Stylesheet
 ******************************************************************/
-@import "libs/bootstrap-3.1.1/mixins.less";
-@import "libs/bootstrap-3.1.1/variables.less";
+@import "libs/bootstrap-3/mixins.less";
+@import "libs/bootstrap-3/variables.less";
 
 
 //
 // IMPORTING STYLES
 //
 
-// styles in base.less
-@import "_base.less";
+// Estilos Base
+@import "_xs-base.less";
 
 
 @media only screen and (min-width: 481px) {
 
-	// styles in 481up.less
-	@import "_481up.less";
+	// styles in  481up.less
+	@import "_xs-481up.less";
 
 } // end of media query
 
 @media only screen and (min-width: 768px) {
 
 	// styles in 768up.less
-	@import "_768up.less";
+	@import "_sm-768up.less";
 
 } // end of media query
 
 
 @media only screen and (min-width: 992px) {
 	// styles in 768up.less
-	@import "_992up.less";
+	@import "_md-992up.less";
 } // end of media query
 
 
 @media only screen and (min-width: 1200px) {
 
-	@import "_1200up.less";
+	@import "_lg-1200up.less";
 
 } // end of media query
 
