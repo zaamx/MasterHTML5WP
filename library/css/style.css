@@ -94,12 +94,12 @@ body {
   padding: 5px;
 }
 .hentry header {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #777777;
   padding: 1.5em;
 }
 .hentry footer {
   padding: 1.5em;
-  border-top: 1px solid #999999;
+  border-top: 1px solid #777777;
 }
 .hentry footer p {
   margin: 0;
@@ -121,7 +121,7 @@ body {
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #999999;
+  color: #777777;
 }
 /* entry content */
 .entry-content {
@@ -140,7 +140,7 @@ body {
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
-  color: #999999;
+  color: #777777;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -148,7 +148,7 @@ body {
   border-bottom: 1px solid #555555;
 }
 .entry-content tr:nth-child(even) {
-  background-color: #999999;
+  background-color: #777777;
 }
 .entry-content td {
   padding: 7px;
@@ -158,7 +158,7 @@ body {
   border-right: 0;
 }
 .entry-content th {
-  background-color: #999999;
+  background-color: #777777;
   border-bottom: 1px solid #555555;
   border-right: 1px solid #555555;
 }
@@ -170,7 +170,7 @@ body {
   padding: 0 0 0 0.75em;
   border-left: 3px solid #428bca;
   font-style: italic;
-  color: #999999;
+  color: #777777;
 }
 .entry-content dd {
   margin-left: 0;
@@ -193,7 +193,7 @@ body {
 }
 .entry-content pre {
   background: #222222;
-  color: #999999;
+  color: #777777;
   font-size: 0.9em;
   padding: 1.5em;
   margin: 0 0 1.5em;
@@ -294,7 +294,7 @@ body {
 #comments-title {
   padding: 0.75em;
   margin: 0;
-  border-top: 1px solid #999999;
+  border-top: 1px solid #777777;
   /* number of comments span */
 }
 .commentlist {
@@ -306,7 +306,7 @@ body {
   clear: both;
   overflow: hidden;
   padding: 1.5em;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #777777;
   /* vcard */
   /* end .commentlist .vcard */
   /* end children */
@@ -329,7 +329,7 @@ body {
   font-style: italic;
 }
 .comment .vcard time a {
-  color: #999999;
+  color: #777777;
   text-decoration: none;
 }
 .comment .vcard time a:hover {
@@ -364,7 +364,7 @@ body {
   background-color: #eeeeee;
 }
 .comment.even {
-  background: #999999;
+  background: #777777;
 }
 /* comment meta */
 /* comment content */
@@ -392,13 +392,13 @@ body {
 ******************************************************************/
 .comment-respond {
   padding: 1.5em;
-  border-top: 1px solid #999999;
+  border-top: 1px solid #777777;
 }
 #reply-title {
   margin: 0;
 }
 .logged-in-as {
-  color: #999999;
+  color: #777777;
   font-style: italic;
   margin: 0;
 }
@@ -452,7 +452,7 @@ body {
   background-color: #eeeeee;
   padding: 1.5em;
   text-align: center;
-  border: 1px solid #999999;
+  border: 1px solid #777777;
   border-radius: 2px;
   margin-bottom: 1.5em;
 }
@@ -462,7 +462,7 @@ body {
 .footer {
   clear: both;
   background-color: #222222;
-  color: #999999;
+  color: #777777;
 }
 /*
 	if you checked out the link above:

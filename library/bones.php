@@ -134,13 +134,13 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
 		// register bootstrap
-		wp_register_style( 'zaamx-bootstrap', get_stylesheet_directory_uri() . '/library/css/libs/bootstrap-3.1.1/bootstrap.css', array(), '', 'all' );
+		wp_register_style( 'zaamx-bootstrap', get_stylesheet_directory_uri() . '/library/css/libs/bootstrap-3/bootstrap.css', array(), '', 'all' );
 
 		// register bootstrap theme (Optional)
 		//wp_register_style( 'zaamx-bootstrap-theme', get_stylesheet_directory_uri() . '/library/css/libs/bootstrap-3.1.1/bootstrap-theme.css', array(), '', 'all' );
 
 		// register fontAwesome
-		wp_register_style( 'zaamx-fontawesome', get_stylesheet_directory_uri() . '/library/fonts/libs/Font-Awesome-4.0.3/css/font-awesome.min.css', array(), '', 'all' );
+		wp_register_style( 'zaamx-fontawesome', get_stylesheet_directory_uri() . '/library/fonts/libs/Font-Awesome-4/css/font-awesome.min.css', array(), '', 'all' );
 
 		
 		// register main stylesheet
